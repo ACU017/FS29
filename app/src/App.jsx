@@ -4,14 +4,15 @@ import ListOfBooks from "./components/ListOfBooks";
 function App() {
   return (
     <div className="App">
-      <h1>Hello CodeOper!</h1>
+      <h1>CodeOp Library</h1>
 
-      <h2>
-        Welcome to your technical assigment. Please, read carefully the
-        README.md file and follow the instructions.
-      </h2>
-      <div className="container d-flex flex-row mb-5   ">
+      <h2>Welcome please choose your book of preference</h2>
+      <div className="books-container container mt-40">
+        <h2>Books</h2>
         <ListOfBooks />
+      </div>
+      <div className="favourites container">
+        <h2>Favourites</h2>
       </div>
     </div>
   );

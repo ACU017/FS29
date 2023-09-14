@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+.books-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 60%;
+  float: left;
+}
+
+.favourites {
+  width: 40%;
+  float: right;
+}

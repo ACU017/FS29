@@ -23,19 +23,22 @@ export default function ListOfBooks() {
 
   return (
     <div>
-      <div id="trial-div">
+      <div id="trial-div mt-20">
         {books.map((book) => (
           <div>
             {
               <div className="card mb-20" style={{ width: "18rem" }}>
                 <div className="card-body">
-                  <h5 className="card-title">{book.title}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">
                     {book.author}
                   </h6>
+                  <h3 className="card-title">{book.title}</h3>
+                  <h6 className="card-subtitle mb-2 text-muted">
+                    {book.pages} pages
+                  </h6>
                   <img className="card-img" src={book.imageLink} />
-                  <a href="#" className="btn">
-                    Add to favorites
+                  <a href="#" className="btn font-weight-bold">
+                    READ MORE
                   </a>
                 </div>
               </div>
