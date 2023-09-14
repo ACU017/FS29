@@ -10,7 +10,9 @@ function App() {
         Welcome to your technical assigment. Please, read carefully the
         README.md file and follow the instructions.
       </h2>
-      <ListOfBooks />
+      <div className="container d-flex flex-row mb-5   ">
+        <ListOfBooks />
+      </div>
     </div>
   );
 }
